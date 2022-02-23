@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-config-client
+  profiles:
+    active: default
+  cloud:
+    config:
+      fail-fast: true
+      label: master
+      uri: http://localhost:8888
+      username: test
+      password: password
+      profile: default
+
+#  main:
+#    allow-circular-references: true
